@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>TODO app</title>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div id="app"></div>
-    <p>修正しました</p>
-    <p>修正しました</p>
-    <script src="src/index.js"></script>
+    <div class="wrapper">
+      <div class="input-form">
+        <p class="done-title title">New</p>
+        <input id="input-text" placeholder="input text" />
+        <button id="input-button">go</button>
+      </div>
+      <div class="now-area">
+        <p class="now-title title">Do</p>
+        <ul id="now-list">
+          <!-- <div class="list-row">
+                <li>TODOです</li>
+                <button>done</button>
+                <button>delete</button>
+              </div> -->
+        </ul>
+      </div>
+      <div class="done-area">
+        <p class="done-title title">Done</p>
+        <ul id="done-list">
+          <!-- <div class="list-row">
+                <li>TODOです</li>
+                <button>cancel</button>
+              </div> -->
+        </ul>
+      </div>
+    </div>
+    <!-- /.wrapper -->
+
+    <script src="script.js"></script>
   </body>
 </html>
